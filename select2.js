@@ -3704,25 +3704,4 @@ the specific language governing permissions and limitations under the Apache Lic
         }
     };
 
-    // exports - modified for CiviCRM to not conflict with other instances of select2
-    if (window.Select2 === undefined) {
-        window.Select2 = {
-            query: {
-                ajax: ajax,
-                local: local,
-                tags: tags
-            }, util: {
-                debounce: debounce,
-                markMatch: markMatch,
-                escapeMarkup: defaultEscapeMarkup,
-                stripDiacritics: stripDiacritics
-            }, "class": {
-                "abstract": AbstractSelect2,
-                "single": SingleSelect2,
-                "multi": MultiSelect2
-            }
-        };
-    }
-
-
 }(jQuery));
